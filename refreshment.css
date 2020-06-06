@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#dude {
+  animation: dude 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#drops {
+  animation: drops 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#lady {
+  animation: lady 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes dude {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(9deg);
+  }
+}
+
+@keyframes drops {
+  from {
+    transform: translate(0px) scaleX(0.5);
+  }
+  to {
+    transform: translate(-300px) scaleX(1.5);
+  }
+}
+
+@keyframes lady {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
